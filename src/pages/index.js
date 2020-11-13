@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -27,6 +28,8 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
+      <a onClick={() => scrollTo("#bottom")}>Click here to smoothscroll</a>
+
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -59,6 +62,15 @@ const BlogIndex = ({ data, location }) => {
           )
         })}
       </ol>
+      <div
+        id="mid"
+        style={{ height: "50rem", backgroundColor: "#000", color: "white" }}
+      >
+        middle
+      </div>
+      <section id="bottom" style={{ height: "30rem" }}>
+        bottom section
+      </section>
     </Layout>
   )
 }

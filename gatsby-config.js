@@ -50,6 +50,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    "gatsby-plugin-webpack-bundle-analyser-v2",
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

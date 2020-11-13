@@ -16,6 +16,7 @@
     "gatsby-plugin-offline": "^3.3.3",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-sharp": "^2.7.1",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-remark-copy-linked-files": "^2.3.19",
     "gatsby-remark-images": "^3.4.2",
     "gatsby-remark-prismjs": "^3.6.0",
@@ -32,6 +33,7 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.15",
     "prettier": "2.1.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
